@@ -1,0 +1,224 @@
+@import "./reset.scss";
+
+$width: 100%;
+// font-size , colors, spacing, fonts
+// _colors.scss =>
+// _spacing =>
+// _fonts => google fonts, adode font,
+// _font_size =>
+
+@mixin flex($value) {
+  display: flex;
+  justify-content: $value;
+  align-items: center;
+}
+
+@mixin Grid($num) {
+  width: $width;
+  display: grid;
+  grid-template-columns: Repeat($num);
+  grid-template-rows: minmax(150px, auto);
+}
+
+@function Repeat($num) {
+  @return repeat($num, 1fr);
+}
+
+.navbar ul {
+  width: $width;
+  max-height: 75px;
+  background-color: rgba(128, 128, 128, 0.486);
+  @include flex(space-around);
+  list-style: none;
+  padding: 2rem;
+  text-transform: uppercase;
+  position: fixed;
+}
+
+li:hover {
+  color: hsla(0, 0%, 20%, 0.726);
+}
+
+// section one
+// .progrmatic-pages
+// .progrmatic-pages-title
+// .progrmatic-pages-text
+// .progrmatic-pages-table-headers .parent .child .child-1
+
+// .progrmatic-pages{
+//     height: 100vh;
+//     &-title{
+//         font-size: 72px;
+//     }
+//     &-text{
+//         font-size: 64px;
+//     }
+//     & .parent &{
+//         .child-1{
+//             font-size: 42px;
+//         }
+//     }
+// }
+
+.first {
+  width: $width;
+  min-height: 100vh;
+  @include flex(center);
+  flex-flow: column wrap;
+  padding: 10rem;
+  gap: 2rem;
+
+  .title1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  span {
+    text-align: center;
+    font-size: 3.7rem;
+    z-index: 1;
+    height: 8rem;
+    width: 8rem;
+    @include flex(center);
+    background-color: gray;
+    outline: 15px solid rgba(71, 65, 65, 0.39);
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+#{&} span:hover {
+  transition: all 2s ease-in-out;
+  transform: scale(1.2);
+}
+
+/* section two */
+.heading {
+  text-align: center;
+  min-height: 100%;
+  font-size: 3.7rem;
+  margin-top: 1rem;
+}
+
+.heading1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.second ul {
+  width: 100%;
+  @include Grid(6);
+  list-style: none;
+  padding: 2rem;
+}
+
+.block h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: gray;
+}
+
+/* section three */
+
+.third {
+  width: $width;
+  min-height: 100vh;
+  @include flex(center);
+  padding: 2rem;
+  gap: 2rem;
+
+  .content {
+    @include flex(flex-start);
+    flex-flow: row wrap;
+    gap: 3rem;
+  }
+}
+
+.content h2 {
+  font-size: 3rem;
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.content a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 140, 255);
+  font-size: 1rem;
+}
+
+/* section four */
+
+.forth {
+  @include Grid(6);
+  margin-top: 2rem;
+  margin-left: 1rem;
+
+  .Clg {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+/* footer */
+
+.foot1 {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: whitesmoke;
+  @include flex(space-evenly);
+  align-items: flex-start;
+}
+
+.foot1 ul,
+img {
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.foot1 li {
+  font-weight: 300;
+  padding: 8px;
+}
+
+.about {
+  width: 350px;
+}
+
+.last {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.74);
+  min-height: 75px;
+  font-size: medium;
+  font-weight: 500;
+  @include flex(flex-start);
+  padding: 1rem;
+}
+
+/* foot2 */
+.foot2 {
+  @include Grid(4);
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.foot2 ul,
+img {
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.foot2 li {
+  // @extend #{&}li;
+  font-weight: 300;
+  padding: 8px;
+}
+
