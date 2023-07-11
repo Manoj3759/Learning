@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+    width: 100%;
+    max-height: 75px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+    text-transform: uppercase;
+
+}
+
+ul li:hover{
+    color: hsla(0, 0%, 20%, 0.726);
+}
+
+/* section one */
+.first{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.first .title1{
+    text-align: center;
+    font-size:3.7rem ; 
+    z-index: 1;  
+}
+
+.first span{
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    outline: 15px solid rgba(71, 65, 65, 0.39);
+    border-radius: 50%;
+    z-index: 1;  
+}
+
+.first span:hover{
+    transition: all 2s ease-in-out;
+    transform: scale(1.2,1.2);
+}
+
+
+/* section two */
+.heading{
+    text-align: center;
+    min-height: 100%;
+    font-size:3.7rem ;
+    margin-top: 1rem;
+}
+
+.heading1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.second ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    list-style: none;
+    padding: 2rem;
+}
+
+.block h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: gray;
+}
+
+/* section three */
+
+.third{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    
+}
+
+ .content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+.content h2{
+    font-size: 3rem;   
+}
+
+.content h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+    font-size: 1rem;
+}
+
+/* section four */
+
+.forth .Clg{
+    width: 150px;
+    height: 100px;
+}
+
+.forth{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: minmax(150px,auto);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+/* footer */
+
+.foot1{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.foot1 ul,img{
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.foot1 li{
+    font-weight: 300;
+    padding: 8px;
+}
+
+.about{
+    width: 350px;
+}
+
+.last{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.74);
+    min-height: 75px;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* foot2 */
+
+
+
+.foot2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(150px,auto);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.foot2 ul,img{
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.foot2 li{
+    font-weight: 300;
+    padding: 8px;
+}
