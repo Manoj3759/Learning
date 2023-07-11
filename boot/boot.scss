@@ -1,0 +1,56 @@
+@import './reset.scss';
+
+$color:rgb(6, 32, 6);
+
+@mixin flex($value){
+    align-items: center;
+    display: flex;
+    justify-content: $value;   
+}
+
+%place{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+.container{
+    margin-top: 2rem;
+}
+
+
+.col{
+    ul{
+        list-style-type: none;
+    }
+}
+
+.cont{
+    @include flex(center);
+    margin-bottom: 5rem;
+    padding: auto;
+    
+    .card
+}
+
+.btn{
+    border: 1rem solid $color;
+    background-color: transparent;
+    border: 25px;
+    color: $color;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.btn:hover{
+    box-shadow: 1px 1px  $color;
+}
+
+.p1{
+    padding-left: 15px;
+    padding-top: 5px;
+    .sp1{
+        font-weight: bold;
+    }
+}
